@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow()
+        window?.frame = UIScreen.main.bounds
+        window?.makeKeyAndVisible()
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = ViewController()
+        PayPalMobile.initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction : "AcaBtq4xBpsZ7eFxkqhJQCmrOWjSId6FSESTR_zW2ppuXOMy6siyLR9FvruPnQQzBRIuMYhEjXcCx5Rs",PayPalEnvironmentSandbox : "AcrEWa07OEYrH7aJNbPSwqk8c-zvcBBJpoHaw4rv_Mxm4EgpPqJQlDp4011bJVn6KLQN9Mn3hAaUMuQa"])
+        
+        
         return true
     }
 

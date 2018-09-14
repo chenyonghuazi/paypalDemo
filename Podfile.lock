@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Braintree/Card (4.17.0):
+    - Braintree/Core
+  - Braintree/Core (4.17.0)
+  - Braintree/PaymentFlow (4.17.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/UnionPay (4.17.0):
+    - Braintree/Card
+    - Braintree/Core
+  - BraintreeDropIn (6.4.1):
+    - BraintreeDropIn/DropIn (= 6.4.1)
+  - BraintreeDropIn/DropIn (6.4.1):
+    - Braintree/Card (~> 4.17)
+    - Braintree/Core (~> 4.17)
+    - Braintree/PaymentFlow (~> 4.17)
+    - Braintree/UnionPay (~> 4.17)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (6.4.1)
+  - CardIO (5.4.1)
+  - PayPal-iOS-SDK (2.18.1):
+    - PayPal-iOS-SDK/CardIO (= 2.18.1)
+    - PayPal-iOS-SDK/Core (= 2.18.1)
+  - PayPal-iOS-SDK/CardIO (2.18.1):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.18.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - BraintreeDropIn
+  - PayPal-iOS-SDK (~> 2.18.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Braintree
+    - BraintreeDropIn
+    - CardIO
+    - PayPal-iOS-SDK
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Braintree: 9681cef8240c8ad9e67493d5c19418041e6c259a
+  BraintreeDropIn: a098771978a60a6fa56837bbfa4754970ecc582a
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  PayPal-iOS-SDK: 10654cd111e911a9807bddb96fae81aacb8e9915
+
+PODFILE CHECKSUM: 83bfd369e684cee53f5f0ebfe62a0eaf9222ab70
+
+COCOAPODS: 1.5.3
